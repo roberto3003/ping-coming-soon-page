@@ -1,6 +1,6 @@
 :root {
   --padding: 1em;
-  --gap: 4em;
+  --gap: 1em;
   --font-size: clamp(1rem, 1.25vw, 2.5rem);
   --letter-spacing: 0.3em;
 }
@@ -86,12 +86,16 @@ input:not(:placeholder-shown):invalid {
   min-width: 300px;
 }
 
-.logo {
-  margin-inline-end: auto;
-}
-
 .wrapper {
   min-height: 100vh;
+}
+
+.logo {
+  height: 2em;
+}
+
+.logo img {
+  height: 100%;
 }
 
 footer .wrapper {
@@ -113,6 +117,13 @@ footer .wrapper {
   );
   gap: var(--gap);
 }
+
+img,
+  picture {
+	max-width: 100%;
+	display: block;
+  }
+
 
 .flex {
   display: flex;
