@@ -29,7 +29,7 @@
   --theme: var(--white);
   --medium: lavender;
   --contrast: lightsteelblue;
-  --accent: slateblue;
+  --accent: steelblue;
   --white: white;
   --black: rgba(46, 49, 49, 1);
   --shadow: 0 0.25vw 1vw  0 rgba(0,0,0,0.2);
@@ -76,6 +76,16 @@ input:not(:placeholder-shown):invalid {
   border: 0.1em solid red;
 }
 
+.social .img {
+      border: 0.2em solid var(--accent);
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+  }
+
+  .social .img:hover {
+	background-color: var(--accent);
+  }
 
 .hero {
   background-image: url('./images/drawers.jpg');
